@@ -1,8 +1,10 @@
 package pro.sky.java.weatherrequestshistoryservice.domain;
 
-import javax.persistence.Column;
+import org.hibernate.annotations.ColumnDefault;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -11,10 +13,11 @@ import java.util.Objects;
 public class HistoryRecord {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String cityName;
-    private LocalDateTime createdAt = LocalDateTime.now();
+    @ColumnDefault("now()")
+    private LocalDateTime createdAt;
     private String result;
 
     public HistoryRecord() {
