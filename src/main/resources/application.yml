@@ -12,7 +12,7 @@ spring:
       settings:
         web-allow-others: true
   datasource:
-    url: jdbc:h2:mem:librarydb
+    url: jdbc:h2:mem:historydb
     username: sa
     password:
     driver-class-name: org.h2.Driver
