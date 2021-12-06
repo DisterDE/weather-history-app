@@ -11,7 +11,7 @@
     </parent>
     <groupId>pro.sky.java</groupId>
     <artifactId>weather-requests-history-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>weather-requests-history-service</name>
     <description>weather-requests-history-service</description>
     <properties>
