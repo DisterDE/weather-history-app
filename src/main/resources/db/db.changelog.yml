@@ -1,5 +1,4 @@
 databaseChangeLog:
-
   - changeSet:
       id: 01-create-history-record-table
       changes:
