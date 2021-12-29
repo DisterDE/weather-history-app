@@ -1,8 +1,8 @@
-package pro.sky.java.weatherrequestshistoryservice.service;
+package pro.sky.java.weatherhistoryapp.service;
 
 import org.springframework.stereotype.Service;
-import pro.sky.java.weatherrequestshistoryservice.domain.HistoryRecord;
-import pro.sky.java.weatherrequestshistoryservice.repository.HistoryRepository;
+import pro.sky.java.weatherhistoryapp.domain.HistoryRecord;
+import pro.sky.java.weatherhistoryapp.repository.HistoryRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

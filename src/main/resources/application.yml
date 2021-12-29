@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: weather-history
   webflux:
     base-path: /weather-history
   r2dbc:

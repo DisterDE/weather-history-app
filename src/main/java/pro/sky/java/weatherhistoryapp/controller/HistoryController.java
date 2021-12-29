@@ -1,8 +1,8 @@
-package pro.sky.java.weatherrequestshistoryservice.controller;
+package pro.sky.java.weatherhistoryapp.controller;
 
 import org.springframework.web.bind.annotation.*;
-import pro.sky.java.weatherrequestshistoryservice.domain.HistoryRecord;
-import pro.sky.java.weatherrequestshistoryservice.service.HistoryService;
+import pro.sky.java.weatherhistoryapp.domain.HistoryRecord;
+import pro.sky.java.weatherhistoryapp.service.HistoryService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

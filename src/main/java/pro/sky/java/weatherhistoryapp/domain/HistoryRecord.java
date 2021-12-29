@@ -1,4 +1,4 @@
-package pro.sky.java.weatherrequestshistoryservice.domain;
+package pro.sky.java.weatherhistoryapp.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

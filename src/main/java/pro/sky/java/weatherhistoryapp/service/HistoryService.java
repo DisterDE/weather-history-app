@@ -1,6 +1,6 @@
-package pro.sky.java.weatherrequestshistoryservice.service;
+package pro.sky.java.weatherhistoryapp.service;
 
-import pro.sky.java.weatherrequestshistoryservice.domain.HistoryRecord;
+import pro.sky.java.weatherhistoryapp.domain.HistoryRecord;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

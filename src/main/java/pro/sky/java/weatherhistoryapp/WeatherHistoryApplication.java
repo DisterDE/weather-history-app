@@ -1,13 +1,13 @@
-package pro.sky.java.weatherrequestshistoryservice;
+package pro.sky.java.weatherhistoryapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WeatherRequestsHistoryServiceApplication {
+public class WeatherHistoryApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WeatherRequestsHistoryServiceApplication.class, args);
+        SpringApplication.run(WeatherHistoryApplication.class, args);
     }
 
 }
