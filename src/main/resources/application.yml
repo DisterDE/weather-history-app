@@ -10,6 +10,6 @@ spring:
     password: password
   liquibase:
     url: jdbc:postgresql://postgres:5432/weather
-    change-log: classpath:/db/db.changelog.yml
+    change-log: classpath:db/db.changelog.yml
     user: admin
     password: password
