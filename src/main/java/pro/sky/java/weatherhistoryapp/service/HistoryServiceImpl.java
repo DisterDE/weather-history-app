@@ -31,9 +31,7 @@ public class HistoryServiceImpl implements HistoryService {
     }
 
     @Override
-    public Flux<HistoryRecord> deleteAll() {
-        Flux<HistoryRecord> deletedEntities = repository.findAll();
-        repository.deleteAll();
-        return deletedEntities;
+    public Mono<Void> deleteAll() {
+        return repository.deleteAll();
     }
 }

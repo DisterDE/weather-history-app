@@ -12,5 +12,5 @@ public interface HistoryService {
 
     Flux<HistoryRecord> findAll();
 
-    Flux<HistoryRecord> deleteAll();
+    Mono<Void> deleteAll();
 }

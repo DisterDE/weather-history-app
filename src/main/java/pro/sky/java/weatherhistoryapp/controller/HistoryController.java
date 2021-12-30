@@ -17,11 +17,13 @@ public class HistoryController {
     }
 
     @GetMapping
-    public Flux<HistoryRecord> getRecords(Integer amount) {
-        if (amount != null) {
-            return historyService.find(amount);
-        }
+    public Flux<HistoryRecord> get() {
         return historyService.findAll();
+    }
+
+    @GetMapping(params = {"amount"})
+    public Flux<HistoryRecord> get(@RequestParam int amount) {
+        return historyService.find(amount);
     }
 
     @PostMapping
@@ -30,7 +32,7 @@ public class HistoryController {
     }
 
     @DeleteMapping
-    public Flux<HistoryRecord> delete() {
+    public Mono<Void> delete() {
         return historyService.deleteAll();
     }
 }
