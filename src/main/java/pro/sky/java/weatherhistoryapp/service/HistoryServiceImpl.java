@@ -18,7 +18,9 @@ public class HistoryServiceImpl implements HistoryService {
     @Override
     public Mono<HistoryRecord> save(HistoryRecord record) {
         log.info("Trying to save history record: {}", record);
-        return repository.save(record).doOnError(e -> log.warn("History record is not saved: {}", record, e)).doOnSuccess(result -> log.info("History record is saved: {}", result));
+        return repository.save(record)
+                .doOnError(e -> log.warn("History record is not saved: {}", record, e))
+                .doOnSuccess(result -> log.info("History record is saved: {}", result));
     }
 
     @Override
