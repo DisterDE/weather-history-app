@@ -28,7 +28,7 @@ public class HistoryHandler {
     public Mono<ServerResponse> save(ServerRequest serverRequest) {
         return ok().body(
                 serverRequest.bodyToMono(HistoryRecord.class)
-                        .map(service::save),
+                        .flatMap(service::save),
                 HistoryRecord.class
         );
     }
