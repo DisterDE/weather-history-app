@@ -27,6 +27,9 @@ dependencies {
 
     runtimeOnly("io.r2dbc:r2dbc-postgresql")
     runtimeOnly("org.postgresql:postgresql")
+
+    runtimeOnly("org.liquibase:liquibase-core")
+    runtimeOnly("org.springframework:spring-jdbc")
 }
 
 tasks.withType<KotlinCompile> {
